@@ -6,4 +6,5 @@ package pw.janyo.enspire;
  */
 public class EnspireGlobals {
     public static final int SIZE_USERNAME = 32;
+    public static final int SIZE_GREETING_MESSAGE = 512;
 }
