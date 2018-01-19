@@ -7,7 +7,7 @@ import javax.ws.rs.ApplicationPath;
 
 /**
  * @author kiva
- * @date 2017/12/30
+ * @date 2017/1/20
  */
 @ApplicationPath("/v1")
 public class EnspireApp extends ResourceConfig {
