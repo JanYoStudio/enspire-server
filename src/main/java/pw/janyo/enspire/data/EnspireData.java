@@ -2,7 +2,7 @@ package pw.janyo.enspire.data;
 
 
 import pw.janyo.enspire.exception.EnspireDataException;
-import pw.janyo.enspire.utils.GsonHelper;
+import pw.janyo.enspire.tools.GsonHelper;
 
 /**
  * @author kiva

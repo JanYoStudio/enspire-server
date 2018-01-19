@@ -1,4 +1,4 @@
-package pw.janyo.enspire.utils;
+package pw.janyo.enspire.tools;
 
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
