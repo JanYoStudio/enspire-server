@@ -3,6 +3,7 @@ package pw.janyo.enspire.resource;
 import pw.janyo.enspire.constraint.Username;
 import pw.janyo.enspire.data.EnspireData;
 import pw.janyo.enspire.data.Greeting;
+import pw.janyo.enspire.tools.Log;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -24,6 +25,8 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getGreetingForUser() {
+        Log.d("Greeting requested");
+
         Greeting greeting = EnspireData.create(Greeting.class);
         if (username != null) {
             greeting.message = "Hello " + username + ". ";

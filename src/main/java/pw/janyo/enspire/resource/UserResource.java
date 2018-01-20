@@ -2,6 +2,7 @@ package pw.janyo.enspire.resource;
 
 import pw.janyo.enspire.constraint.Username;
 import pw.janyo.enspire.data.User;
+import pw.janyo.enspire.tools.Log;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -22,6 +23,8 @@ public class UserResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getUser() {
+        Log.d("User profile requested");
+
         User user = new User();
         user.name = username;
         user.username = username;
